@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-using namespace std;
+//using namespace std;
 int game(int maxnum){
     srand(time(0));
     int luku = rand() % maxnum + 1;
@@ -9,14 +9,14 @@ int game(int maxnum){
     int arvaustenmaara=0;
     while(true){
         arvaustenmaara++;
-        cout<<"arvaa luku: ";
-        cin>>arvaus;
+       std::cout<<"arvaa luku: ";
+        std::cin>>arvaus;
         if(arvaus<luku){
-            cout<<"luku on suurempi"<<endl;
+            std::cout<<"luku on suurempi"<<std::endl;
         } else if(arvaus>luku){
-            cout << "Luku on pienempi." << endl;
+            std::cout << "Luku on pienempi." << std::endl;
         } else {
-            cout << "Oikea vastaus!" << endl;
+            std::cout << "Oikea vastaus!" << std::endl;
             break;
         }
 
@@ -28,7 +28,7 @@ int main()
 {
     int maxnum = 40;
     int arvaustenmaara = game(maxnum);
-    cout << "Arvasit " << arvaustenmaara << " kertaa." << endl;
+    std::cout << "Arvasit " << arvaustenmaara << " kertaa." << std::endl;
     return 0;
 }
 
