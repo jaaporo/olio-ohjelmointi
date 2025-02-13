@@ -7,14 +7,13 @@ Student::Student(string name, int age) :name(name), Age(age) {}
 
 void Student::setAge(int age)
 {
-    //cout<<"Aseta opiskelijan ika\n";
-    //cin>>Age;
+   
     Age = age;
 }
 
 void Student::setName(string name)
 {
-    //cout<<"Aseta opiskelijan nimi\n";
+  
     this->name = name;
 }
 
